@@ -10,7 +10,7 @@
 
 <p>It's nice to meet you, {{ results.firstName }} {{ results.lastName }} class of {{ results.classYear }}!</p>
 {% if results.actualNickname %}
-    <p>Or, should I call you {{ resultWithChoice.actualNickname }}?<p>
+    <p>Or, should I call you {{ results.actualNickname }}?<p>
 {% endif %}
 
 {% if results.flavor == 'none' %}
