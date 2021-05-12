@@ -8,15 +8,15 @@
 <body>
 <h1>Well, hello!</h1>   
 
-<p>It's nice to meet you, {{ resultsWithChoice.firstName }} {{ resultsWithChoice.lastName }} class of {{ resultsWithChoice.classYear }}!</p>
+<p>It's nice to meet you, {{ resultWithChoice.firstName }} {{ resultWithChoice.lastName }} class of {{ resultWithChoice.classYear }}!</p>
 {% if results.actualNickname %}
-    <p>Or, should I call you {{ results.actualNickname }}?<p>
+    <p>Or, should I call you {{ resultWithChoice.actualNickname }}?<p>
 {% endif %}
 
 {% if resultsWithChoice.flavor == 'none' %}
     <p>I'm sorry you don't like ice cream. Maybe we can go for a walk instead?</p>
 {% else %}
-    <p>Let's go out sometime for some {{ resultsWithChoice.flavor }} ice cream, shall we?</p>
+    <p>Let's go out sometime for some {{ resultWithChoice.flavor }} ice cream, shall we?</p>
 {% endif %}
 </body>
 </div>
