@@ -69,6 +69,7 @@ def greetAgain():
     '''
     person = request.args.get('person')
     year = request.args.get('classYear')
+    height = request.args.get('height')
     return render_template('biggerGreet.html',
                            person=person, year=year)
 
